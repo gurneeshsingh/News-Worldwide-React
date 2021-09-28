@@ -12,7 +12,7 @@ const App = () => {
      
       <div >
         <Switch>
-          <Route exact path="/"><Newscards category="general" key="general" /></Route>
+          <Route exact path="/"><Newscards category="world" key="world" /></Route>
           <Route exact path="/business"><Newscards category="business" key="business" /></Route>
           <Route exact path="/entertainment"><Newscards category="entertainment" key="entertainment" /></Route>
           <Route exact path="/health"><Newscards category="health" key="health" /></Route>
