@@ -12,6 +12,7 @@ const Newscards = ({ category }) => {
     const [loading, setLoading] = useState(true);
     const [totalResluts, setTotalResults] = useState(0);
     const [page, setPage] = useState(1)
+   
 
     useEffect(() => {
         const url = `https://gnews.io/api/v4/top-headlines?&token=${process.env.REACT_APP_GNEWS_API}&topic=${category}&country=au,us,in&max=20&page=${page}&lang=en`;
