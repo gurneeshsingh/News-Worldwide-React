@@ -40,7 +40,7 @@ const Newscards = ({ category }) => {
 
     async function fetchData() {
         const url = `https://gnews.io/api/v4/top-headlines?&token=${process.env.REACT_APP_GNEWS_API}&topic=${category}&country=au,us,in&max=20&page=${page + 1}&lang=en`;
-        setPage(page + 1)
+        setPage((prev)=>prev + 1)
         const response = await fetch(url);
         const data = await response.json();
         setHeadlines(headlines.concat(data?.articles))
